@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "gravitygrid",
+	"version": "${version}",
+	"name": "Gravity Grid",
+	"description": "What if every chunk had different gravity?",
+	"authors": [
+		"L33tfox"
+	],
+	"contact": {
+		"homepage": "https://linktree.com/l33tfox",
+		"sources": "https://github.com/L33tfx"
+	},
+	"license": "MIT",
+	"icon": "assets/gravitygrid/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.l33tfox.gravitygrid.GravityGrid"
+		],
+		"client": [
+			"com.l33tfox.gravitygrid.GravityGridClient"
+		],
+		"fabric-datagen": [
+			"com.l33tfox.gravitygrid.GravityGridDataGenerator"
+		]
+	},
+	"mixins": [
+		"gravitygrid.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
