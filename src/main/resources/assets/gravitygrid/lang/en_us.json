@@ -1,3 +1,10 @@
 {
-  "menu.gravity_direction_display" : "Gravity Direction:"
+  "menu.gravity_direction_display" : "Gravity:",
+  "text.autoconfig.gravitygrid.option.displayGravityDirection" : "Display Gravity Direction Text on Screen",
+  "text.autoconfig.gravitygrid.option.textColor" : "Gravity Direction Text Color",
+  "text.autoconfig.gravitygrid.option.textXPos" : "Gravity Direction Text X Position",
+  "text.autoconfig.gravitygrid.option.textXPos.@Tooltip" : "Value is percentage of the screen (0 means far left, 100 means far right)",
+  "text.autoconfig.gravitygrid.option.textYPos" : "Gravity Direction Text Y Position",
+  "text.autoconfig.gravitygrid.option.textYPos.@Tooltip" : "Value is percentage of the screen (0 means top, 100 means bottom)",
+  "text.autoconfig.gravitygrid.option.displayBackground" : "Show Black Text Background"
 }

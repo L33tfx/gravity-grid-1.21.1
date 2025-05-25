@@ -23,6 +23,9 @@
 		],
 		"fabric-datagen": [
 			"com.l33tfox.gravitygrid.GravityGridDataGenerator"
+		],
+		"modmenu": [
+			"com.l33tfox.gravitygrid.ModMenuIntegration"
 		]
 	},
 	"mixins": [
