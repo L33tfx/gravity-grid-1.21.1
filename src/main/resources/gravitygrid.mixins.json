@@ -1,10 +1,13 @@
 {
-	"required": true,
-	"package": "com.l33tfox.gravitygrid.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+  "required": true,
+  "package": "com.l33tfox.gravitygrid.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "InGameHudMixin"
+  ]
 }

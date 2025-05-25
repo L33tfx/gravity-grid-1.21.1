@@ -7,7 +7,7 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.chunk.WorldChunk;
 
-public class WorldTickEvent {
+public class ServerWorldTickEvent {
     public static void playersWorldTick(ServerWorld world) {
         for (ServerPlayerEntity player : world.getPlayers()) {
             if (player.isSpectator()) {

@@ -11,7 +11,7 @@ public class GravityGrid implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModAttachmentTypes.init();
-		ModEvents.init();
+		ModServerEvents.init();
 	}
 
 }
