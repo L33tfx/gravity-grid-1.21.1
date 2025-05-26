@@ -15,6 +15,7 @@ public class GravityGrid implements ModInitializer {
 	public void onInitialize() {
 		ModAttachmentTypes.init();
 		ModServerEvents.init();
+		ModGameRules.init();
 		AutoConfig.register(GravityGridConfig.class, GsonConfigSerializer::new);
 	}
 
