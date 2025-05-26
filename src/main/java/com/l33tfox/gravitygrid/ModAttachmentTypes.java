@@ -25,11 +25,6 @@ public class ModAttachmentTypes {
             )
  );
 
-    public static int generateRandomDirectionId() {
-        Random rand = new Random();
-        return rand.nextInt(Direction.EAST.getId() + 1);
-    }
-
     public static void init() {
         // This empty method can be called from the mod initializer to ensure our component type is registered at mod initialization time
         // ModAttachmentTypes.init();

@@ -4,6 +4,7 @@ import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
 
+// Config screen set up using AutoConfig which is bundled with ClothConfig API
 @Config(name = "gravitygrid")
 public class GravityGridConfig implements ConfigData {
     public boolean displayGravityDirection = true;

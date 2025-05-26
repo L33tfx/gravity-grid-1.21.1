@@ -9,6 +9,8 @@ import net.minecraft.world.chunk.WorldChunk;
 public class WorldLoadEvent {
     public static int chunkLength = 16;
 
+    // Called when world loads using event in ModServerEvents. Loops over 3x3 grid of chunks around spawnpoint and makes
+    // sure they all have normal downwards gravity to prevent spawn killing
     public static void setFairSpawnpoint(MinecraftServer server, ServerWorld world) {
         for (int i = -1; i <= 1; i++) {
             for (int j = -1; j <= 1; j++) {

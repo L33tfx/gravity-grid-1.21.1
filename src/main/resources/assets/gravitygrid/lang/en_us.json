@@ -7,5 +7,6 @@
   "text.autoconfig.gravitygrid.option.textYPos" : "Gravity Direction Text Y Position",
   "text.autoconfig.gravitygrid.option.textYPos.@Tooltip" : "Value is percentage of the screen (0 means top, 100 means bottom)",
   "text.autoconfig.gravitygrid.option.displayBackground" : "Show Black Text Background",
+  "text.autoconfig.gravitygrid.title" : "Gravity Grid Config",
   "gamerule.gravityGridEnabled" : "Chunk Gravity Grid Enabled"
 }

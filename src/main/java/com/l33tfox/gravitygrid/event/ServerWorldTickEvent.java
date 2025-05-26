@@ -9,9 +9,13 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.chunk.WorldChunk;
 
 public class ServerWorldTickEvent {
+    // if all players' gravity has already been reset to Direction.DOWN after gamerule changed from true -> false
     public static boolean gravityWasReset = false;
 
+    // Called every tick in a world on the server-side using event in ModServerEvents. Sets correct gravity directions
+    // for all players.
     public static void playersWorldTick(ServerWorld world) {
+        // if gravity grid gamerule is set to false
         if (!world.getGameRules().getBoolean(ModGameRules.GRAVITY_GRID_ENABLED)) {
             if (!gravityWasReset) {
                 resetGravityForAllPlayers(world);
@@ -34,8 +38,10 @@ public class ServerWorldTickEvent {
 
     private static void setGravityDirectionForAllPlayers(ServerWorld world) {
         for (ServerPlayerEntity player : world.getPlayers()) {
-            if (!player.isSpectator()) {
+            if (!player.isSpectator()) { // don't affect spectators' gravity
                 WorldChunk chunk = world.getChunk(player.getChunkPos().x, player.getChunkPos().z);
+
+                // if chunk exists and player's gravity has not been set to chunk's gravity yet
                 if (chunk != null && GravityChangerAPI.getBaseGravityDirection(player).getId() != chunk.getAttachedOrCreate(ModAttachmentTypes.GRAVITY_DIRECTION_TYPE)) {
                     GravityChangerAPI.setBaseGravityDirection(player, Direction.byId(chunk.getAttachedOrCreate(ModAttachmentTypes.GRAVITY_DIRECTION_TYPE)));
                 }
